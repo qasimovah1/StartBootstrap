@@ -1,0 +1,88 @@
+#about
+    padding: 100px 0
+    .textbox
+        overflow: hidden
+        h1
+            font-size: 48px
+            font-weight: 700
+            margin: 0 0 20px
+            &:hover
+                cursor: text
+        h3
+            font-size: 18px
+            color: #6c757d
+            font-weight: 400
+            font-style: italic
+            margin: 0 0 50px
+    .box
+        margin: 50px 0
+        position: relative
+        .textbox
+            width: 41%
+            padding: 0 20px 20px 20px
+            h2
+                font-size: 28px
+                font-weight: 700
+                line-height: 1.5
+            p
+                color: #6c757d
+                margin: 10px 0
+                font-size: 19px
+                line-height: 1.5
+        .imgbox
+            position: absolute
+            left: 43%
+            width: 170px
+            height: 170px
+            border: solid #e9ecef
+            border-width: 6px
+            border-radius: 100%
+            overflow: hidden
+    .minibox
+        width: 170px
+        height: 170px
+        border: solid #e9ecef
+        border-width: 6px
+        border-radius: 100%
+        background-color: #ffc800
+        h4
+            margin: 0 0 8px 0
+            color: #ffffff
+            font-size: 24px
+            font-weight: 700
+    @media (min-width: 992px) and (max-width: 1200px)
+        .box
+            .imgbox
+                width: 150px
+                height: 150px
+        .minibox
+            width: 150px
+            height: 150px
+    @media (min-width: 768px) and (max-width: 992px)
+        .box
+            .imgbox
+                width: 100px
+                height: 100px
+        .minibox
+            width: 100px
+            height: 100px
+            h4
+                font-size: 16px
+                margin: 0 0 5px 0
+    @media (max-width: 767px)
+        .box
+            margin: 0
+            .imgbox
+                width: 80px
+                height: 80px
+                left: 0%
+            .textbox
+                margin-left: 80px
+                width: 100%
+        .minibox
+            width: 80px
+            height: 80px
+            h4
+                font-size: 14px
+                font-weight: normal
+                margin: 0

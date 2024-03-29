@@ -1,0 +1,590 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+}
+
+.imgbox img {
+  width: 100%;
+}
+
+header .menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  left: 0%;
+  background-color: #212529;
+}
+header .menu .imgbox {
+  width: 140px;
+}
+header .menu nav a {
+  font-weight: 300;
+  margin-left: 30px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+header .menu nav a:hover {
+  cursor: pointer;
+  color: #ffc800;
+}
+header .menu .button {
+  display: none;
+}
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+  header .menu .button {
+    display: flex;
+    color: #979d9e;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: solid #5a5e65;
+    border-width: 1px;
+    border-radius: 6px;
+  }
+  header .menu .button h1 {
+    margin-right: 6px;
+  }
+}
+@media (max-width: 576px) and (min-width: 280px) {
+  header .menu {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 280px) {
+  header .menu {
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  header .menu .imgbox {
+    margin-bottom: 10px;
+  }
+}
+
+#welcome {
+  padding: 50px 0;
+  background-image: url(assestt/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+#welcome .box {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  height: 700px;
+}
+#welcome .box h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+}
+#welcome .box h2 {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+#welcome .box h2:hover {
+  cursor: text;
+}
+#welcome .box .btn {
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 20px 50px;
+  background-color: #dfb314;
+  transition: 0.2s;
+}
+#welcome .box .btn:hover {
+  background-color: #d9aa00;
+}
+#welcome .box .btn h5 {
+  cursor: pointer;
+}
+
+#services {
+  padding: 100px 0;
+}
+#services .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#services .textbox h1:hover {
+  cursor: text;
+}
+#services .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#services .box {
+  display: flex;
+  justify-content: center;
+}
+#services .box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  font-size: 64px;
+  color: #ffffff;
+  background-color: #ffc800;
+}
+#services .col-md-4 .textbox {
+  margin: 0 10px;
+}
+#services .col-md-4 .textbox h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+#services .col-md-4 .textbox h2:hover {
+  cursor: text;
+}
+#services .col-md-4 .textbox h4 {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+#services .col-md-4 .textbox h4:hover {
+  cursor: text;
+}
+#services .box, #services .textbox {
+  overflow: hidden;
+}
+
+#portfolio {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+#portfolio .textbox {
+  overflow: hidden;
+}
+#portfolio .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#portfolio .textbox h1:hover {
+  cursor: text;
+}
+#portfolio .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#portfolio .box {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .imgbox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6b507;
+  opacity: 0%;
+  transition: 0.5s;
+  font-size: 50px;
+  color: #ffffff;
+  cursor: pointer;
+}
+#portfolio .box .imgbox .icon i {
+  cursor: pointer;
+}
+#portfolio .box .imgbox .icon:hover {
+  opacity: 90%;
+}
+#portfolio .box .textbox h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+#portfolio .box .textbox h4 {
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+  #portfolio .box {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#about {
+  padding: 100px 0;
+}
+#about .textbox {
+  overflow: hidden;
+}
+#about .textbox h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+#about .textbox h1:hover {
+  cursor: text;
+}
+#about .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 50px;
+}
+#about .box {
+  margin: 50px 0;
+  position: relative;
+}
+#about .box .textbox {
+  width: 41%;
+  padding: 0 20px 20px 20px;
+}
+#about .box .textbox h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#about .box .textbox p {
+  color: #6c757d;
+  margin: 10px 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+#about .box .imgbox {
+  position: absolute;
+  left: 43%;
+  width: 170px;
+  height: 170px;
+  border: solid #e9ecef;
+  border-width: 6px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+#about .minibox {
+  width: 170px;
+  height: 170px;
+  border: solid #e9ecef;
+  border-width: 6px;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+#about .minibox h4 {
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #about .box .imgbox {
+    width: 150px;
+    height: 150px;
+  }
+  #about .minibox {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #about .box .imgbox {
+    width: 100px;
+    height: 100px;
+  }
+  #about .minibox {
+    width: 100px;
+    height: 100px;
+  }
+  #about .minibox h4 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+}
+@media (max-width: 767px) {
+  #about .box {
+    margin: 0;
+  }
+  #about .box .imgbox {
+    width: 80px;
+    height: 80px;
+    left: 0%;
+  }
+  #about .box .textbox {
+    margin-left: 80px;
+    width: 100%;
+  }
+  #about .minibox {
+    width: 80px;
+    height: 80px;
+  }
+  #about .minibox h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+#team {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+#team .textbox h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#team .textbox h1:hover {
+  cursor: text;
+}
+#team .textbox h3 {
+  font-size: 20px;
+  color: #8b8484;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+#team .textbox h3:hover {
+  cursor: text;
+}
+#team .box .imgbox {
+  width: 236px;
+  height: 236px;
+  border: 6px solid #d0d1d1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#team .textbox {
+  margin-bottom: 50px;
+}
+#team .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 15px 0 10px 0;
+}
+#team .textbox h2:hover {
+  cursor: text;
+}
+#team .textbox p {
+  font-size: 18px;
+  color: #8b8484;
+  margin-bottom: 20px;
+}
+#team .textbox p:hover {
+  cursor: text;
+}
+#team .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a1717;
+  margin: 0 10px 0 10px;
+}
+#team .btn:hover {
+  background: #424649;
+}
+#team .icon {
+  color: white;
+}
+#team .txt {
+  width: 724px;
+  text-align: center;
+}
+#team .txt h6 {
+  color: #8b8484;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 992px) {
+  #team .box {
+    margin: 40px 0;
+  }
+}
+
+#google {
+  padding: 50px 0;
+}
+#google img {
+  cursor: pointer;
+}
+#google .imgbox {
+  width: 180px;
+}
+#google .facebook {
+  width: 150px;
+}
+#google .google, #google .ibm {
+  width: 110px;
+}
+
+#contact {
+  padding: 100px 0;
+  background-color: #212529;
+  background-image: url(assestt/map-image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+}
+#contact .textbox {
+  color: white;
+  margin-top: 60px;
+}
+#contact .textbox h1 {
+  font-size: 50px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+#contact .textbox h3 {
+  font-size: 20px;
+  color: #6c757d;
+}
+#contact .from {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+#contact .from input {
+  margin: 14px 0;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contact .from input::-moz-placeholder {
+  font-size: 20px;
+  color: #ced4db;
+  font-weight: 700;
+}
+#contact .from input::placeholder {
+  font-size: 20px;
+  color: #ced4db;
+  font-weight: 700;
+}
+#contact .farm {
+  display: flex;
+  margin-top: 55px;
+  font-size: 20px;
+}
+#contact .farm textarea {
+  color: #a1a1a1;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 18px;
+}
+#contact .farm textarea::-moz-placeholder {
+  font-size: 20px;
+  color: #ced4db;
+  font-weight: 700;
+}
+#contact .farm textarea::placeholder {
+  font-size: 20px;
+  color: #ced4db;
+  font-weight: 700;
+}
+#contact .btn {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #fecc14;
+  opacity: 60%;
+  padding: 20px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+#contact .btn h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #contact .textbox {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact .box h1 {
+    font-size: 45px;
+  }
+  #contact .box h3 {
+    font-size: 18px;
+  }
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .textbox {
+  text-align: start;
+}
+footer .textbox h3 {
+  font-size: 18px;
+}
+footer .col-lg-4 {
+  text-align: center;
+}
+footer .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a1717;
+  margin: 0 10px 0 10px;
+}
+footer .btn:hover {
+  background: #424649;
+}
+footer .icon {
+  color: white;
+}
+footer .privcy {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .privcy h4 {
+  font-size: 18px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  footer .textbox {
+    text-align: center;
+  }
+  footer .privcy {
+    display: flex;
+    justify-content: center;
+  }
+  footer .col-lg-4 {
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
